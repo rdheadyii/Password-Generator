@@ -16,6 +16,7 @@ var incByUpperCase;
 var incByLowerCase;
 var incByNumber;
 var incBySpecialChar;
+let newPass = []
 
 // generate pass function
 function generatePassword() {
@@ -29,29 +30,44 @@ function generatePassword() {
     var passLength = (prompt("Kindly enter how many characters you want your password to be."));
   }
 
+  // need alert to tell how many characters selected
   alert("Your password will be " + passLength + " characters long.");
+
+  // need confirm for uppercase
+  // if yes add to password array and move to next
+  var incByUpperCase = confirm("Should Password include uppercase characters?\n Select 'OK' to allow or 'Cancel' to decline.");
+
+  if(incByUpperCase) {
+    newPass = newPass.concat(incByUpperCase)
+  }
+
+  // need confirm for lowercase
+  // if yes add to password array and move to next
+  var incByLowerCase = confirm("Should Password include uppercase characters?\n Select 'OK' to allow or 'Cancel' to decline.");
+
+  if(incByLowerCase) {
+    newPass = newPass.concat(incByLowerCase)
+  }
+
+  // need confirm for numeric
+  // if yes add to password array and move to next
+    var incByNumber = confirm("Should Password include uppercase characters?\n Select 'OK' to allow or 'Cancel' to decline.");
+
+  if(incByNumber) {
+    newPass = newPass.concat(incByNumber)
+  }
+
+  // need confirm for special characters
+  // if yes add to password array and move to next
+  var incBySpecialChar = confirm("Should Password include uppercase characters?\n Select 'OK' to allow or 'Cancel' to decline.");
+
+  if(incBySpecialChar) {
+    newPass = newPass.concat(incBySpecialChar)
+  }
 
 }
 
 
-
-// need alert to tell how many characters selected
-
-// need confirm for lowercase
-// if yes add to password array and move to next
-// if no moves to next
-
-// need confirm for uppercase
-// if yes add to password array and move to next
-// if no moves to next
-
-// need confirm for numeric
-// if yes add to password array and move to next
-// if no moves to next
-
-// need confirm for special characters
-// if yes add to password array and move to next
-// if no moves to next
 
 // Write password to the #password input
 function writePassword() {
