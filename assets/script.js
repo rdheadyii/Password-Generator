@@ -11,6 +11,11 @@ var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar =["!", "#", "$", "&", "(", ")", "+", ",", "=", ">", "<", "?", "@", "*"];
 
 // need to define variables
+var passLength = "";
+var incByUpperCase;
+var incByLowerCase;
+var incByNumber;
+var incBySpecialChar;
 
 // need to generate password length prompt
 
