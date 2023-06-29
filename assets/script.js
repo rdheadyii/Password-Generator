@@ -17,9 +17,23 @@ var incByLowerCase;
 var incByNumber;
 var incBySpecialChar;
 
-// need to generate password length prompt
+// generate pass function
+function generatePassword() {
+  // need to generate password length prompt
+  var passLength = (prompt("Kindly enter how many characters you want your password to be."));
 
-// need alert when password isnt between 8-128 chars
+  // need alert when password isnt between 8-128 chars
+  if(passLength < 8 || passLength > 128) {
+    alert("Password length must be between 8-128 characters. Please try again.");
+
+    var passLength = (prompt("Kindly enter how many characters you want your password to be."));
+  }
+
+  alert("Your password will be " + passLength + " characters long.");
+
+}
+
+
 
 // need alert to tell how many characters selected
 
