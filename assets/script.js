@@ -24,6 +24,8 @@ function generatePassword() {
   var passLength = parseInt(prompt("Kindly enter how many characters you want your password to be."));
 
   if (isNaN(passLength)) {
+    alert("Password length must be a number.")
+
     return null;
   }
 
