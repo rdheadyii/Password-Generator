@@ -6,7 +6,7 @@ This is a secure password generator that will generate a password between 8-128 
 
 ## Display
 
-![]()
+![Screenshot of generator.]()
 
 ## Installation
 
@@ -14,7 +14,7 @@ N/A
 
 ## Usage
 
-link here
+[Visit the Page Here.](https://rdheadyii.github.io/Password-Generator/)
 
 ## Credits
 
