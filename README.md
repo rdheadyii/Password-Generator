@@ -16,6 +16,8 @@ Special Characters
 
 After confirming selections the user will have a password generated. If no character class were confirmed user will be prompted to select at least one selection and function will return back to start of confirms.
 
+This is a great project to practice writing JavaScript and to understand the logic behind functions. 
+
 ## Display
 
 Below are some images of how website functions.
