@@ -23,6 +23,10 @@ function generatePassword() {
   // need to generate password length prompt
   var passLength = parseInt(prompt("Kindly enter how many characters you want your password to be."));
 
+  if (isNaN(passLength)) {
+    return null;
+  }
+
   // need alert when password isnt between 8-128 chars
   while (!(passLength > 8 && passLength < 128)) {
     alert("Password length must be between 8-128 characters. Please try again.");
@@ -94,9 +98,9 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  if (password !== null) {
   passwordText.value = password;
-
+  }
 }
 
 // Add event listener to generate button
