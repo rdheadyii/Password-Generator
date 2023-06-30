@@ -21,13 +21,13 @@ let newPass = []
 // generate pass function
 function generatePassword() {
   // need to generate password length prompt
-  var passLength = (prompt("Kindly enter how many characters you want your password to be."));
+  var passLength = parseInt(prompt("Kindly enter how many characters you want your password to be."));
 
   // need alert when password isnt between 8-128 chars
-  if(passLength < 8 || passLength > 128) {
+  while (!(passLength > 8 && passLength < 128)) {
     alert("Password length must be between 8-128 characters. Please try again.");
 
-    var passLength = (prompt("Kindly enter how many characters you want your password to be."));
+    passLength = parseInt(prompt("Kindly enter how many characters you want your password to be."));
   }
 
   // need alert to tell how many characters selected
