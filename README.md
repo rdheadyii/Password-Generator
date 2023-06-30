@@ -6,7 +6,13 @@ This is a secure password generator that will generate a password between 8-128 
 
 ## Display
 
-![Screenshot of generator.]()
+Below are some images of how website functions.
+
+![Screenshot of generator website.](./assets/images/password-base-site.PNG)
+
+![Screenshot of generator prompt.](./assets/images/password-prompt-site.PNG)
+
+![Screenshot of generated password.](./assets/images/password-example-site.PNG)
 
 ## Installation
 
